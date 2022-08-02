@@ -29,6 +29,6 @@ for f in files:
     deps = [d for d in manifest['dependencies'].keys() if d.startswith(PREFIX)]
 
     for d in deps:
-        print("    \"{}\" -> \"{}\";".format(package_name, d))
+        print(f'    \"{package_name}\" -> \"{d}\";')
 
 print("}")
